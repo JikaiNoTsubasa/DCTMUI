@@ -1,9 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
+	<classpathentry exported="true" kind="lib" path="libs"/>
+	<classpathentry kind="src" path="resources"/>
 	<classpathentry kind="src" path="src/main/java"/>
-	<classpathentry kind="src" path="libs"/>
 	<classpathentry kind="src" path="src/test/java"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.buildship.core.gradleclasspathcontainer"/>
+	<classpathentry kind="lib" path="libs/activation.jar"/>
+	<classpathentry kind="lib" path="libs/All-MB.jar"/>
+	<classpathentry kind="lib" path="libs/aspectjrt.jar"/>
+	<classpathentry kind="lib" path="libs/bpmutil.jar"/>
+	<classpathentry kind="lib" path="libs/certj.jar"/>
+	<classpathentry kind="lib" path="libs/ci.jar"/>
+	<classpathentry kind="lib" path="libs/collaboration.jar"/>
+	<classpathentry kind="lib" path="libs/commons-cli-1.4.jar"/>
+	<classpathentry kind="lib" path="libs/commons-codec-1.3.jar"/>
+	<classpathentry kind="lib" path="libs/commons-lang-2.4.jar"/>
+	<classpathentry kind="lib" path="libs/configservice-api.jar"/>
+	<classpathentry kind="lib" path="libs/configservice-impl.jar"/>
+	<classpathentry kind="lib" path="libs/cryptojce.jar"/>
+	<classpathentry kind="lib" path="libs/cryptojcommon.jar"/>
+	<classpathentry kind="lib" path="libs/dctm.jar"/>
+	<classpathentry kind="lib" path="libs/dfc.jar"/>
+	<classpathentry kind="lib" path="libs/DmcRecords.jar"/>
+	<classpathentry kind="lib" path="libs/dms-client-api.jar"/>
+	<classpathentry kind="lib" path="libs/jaxb-api.jar"/>
+	<classpathentry kind="lib" path="libs/jaxb-impl.jar"/>
+	<classpathentry kind="lib" path="libs/jcifs-krb5-1.3.1.jar"/>
+	<classpathentry kind="lib" path="libs/jcmFIPS.jar"/>
+	<classpathentry kind="lib" path="libs/jsr173_api.jar"/>
+	<classpathentry kind="lib" path="libs/krbutil.jar"/>
+	<classpathentry kind="lib" path="libs/log4j.jar"/>
+	<classpathentry kind="lib" path="libs/messageArchive.jar"/>
+	<classpathentry kind="lib" path="libs/messageService.jar"/>
+	<classpathentry kind="lib" path="libs/mysql-connector-java-8.0.11.jar"/>
+	<classpathentry kind="lib" path="libs/questFixForJDK7.jar"/>
+	<classpathentry kind="lib" path="libs/server-impl.jar"/>
+	<classpathentry kind="lib" path="libs/subscription.jar"/>
+	<classpathentry kind="lib" path="libs/vsj-license.jar"/>
+	<classpathentry kind="lib" path="libs/vsj-standard-3.3.jar"/>
+	<classpathentry kind="lib" path="libs/workflow.jar"/>
+	<classpathentry kind="lib" path="libs/xtrim-api.jar"/>
+	<classpathentry kind="lib" path="libs/xtrim-server.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
