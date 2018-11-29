@@ -29,7 +29,7 @@ public class MainWindow {
 	
 	public void buildUI() {
 		getStage().setTitle(getTitle());
-		getStage().getIcons().add(new Image(getClass().getResource("/icons8_Tentacles_64px.png").toExternalForm()));
+		getStage().getIcons().add(new Image(getClass().getResource("/icon_2.png").toExternalForm()));
 		setRoot(new BorderPane());
 		getRoot().getStylesheets().add(getClass().getResource(getTheme()).toExternalForm());
 		setScene(new Scene(getRoot(), 800, 600));
