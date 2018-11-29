@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+    <docbase id="0">
+        <host>DOCBASE_HOST</host>
+        <name>DOCBASE_NAME</name>
+        <password>sbi-UEFTU1dPUkQ=</password>
+        <port>1489</port>
+        <username>USERNAME</username>
+    </docbase>
+</root>

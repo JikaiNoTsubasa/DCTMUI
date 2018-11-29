@@ -7,6 +7,10 @@ public class DocbaseInfo {
 
 	private String name, host, username, password;
 	private int port, id;
+	
+	public DocbaseInfo() {
+	}
+	
 	public DocbaseInfo(String name, String host, String username, String password, int port) {
 		super();
 		this.name = name;
@@ -57,5 +61,21 @@ public class DocbaseInfo {
 	public void setId(int id) {
 		this.id = id;
 	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder
+		.append(name)
+		.append(" [")
+		.append(host)
+		.append(":")
+		.append(port)
+		.append("/")
+		.append(username)
+		.append("]");
+		return builder.toString();
+	}
+	
 	
 }

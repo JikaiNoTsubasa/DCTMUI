@@ -14,6 +14,8 @@ import com.documentum.fc.common.DfException;
 import com.documentum.fc.common.DfLoginInfo;
 import com.documentum.fc.common.IDfLoginInfo;
 
+import fr.triedge.dctm.utils.SBIEncrypter;
+
 
 public class DFC {
 
@@ -21,7 +23,7 @@ public class DFC {
 		IDfLoginInfo loginInfoObj = new DfLoginInfo();
 		loginInfoObj.setUser(user);
 		//loginInfoObj.setPassword(Utils.decryptPassword(password));
-		loginInfoObj.setPassword(password);
+		loginInfoObj.setPassword(SBIEncrypter.decode(password));
 
 		IDfClient client = new DfClient();
 

@@ -5,6 +5,7 @@ import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.TabPane;
+import javafx.scene.image.Image;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
@@ -12,21 +13,23 @@ public class MainWindow {
 
 	private Stage stage;
 	private Scene scene;
-	private String theme;
+	private String theme, title;
 	private BorderPane root;
 	private TabPane tabPane;
 	private MenuBar menubar;
 	private Menu menuFile, menuDctm;
-	private MenuItem itemExit;
+	private MenuItem itemExit, itemOpenDctmDashboard;
 	
-	public MainWindow(Stage stage, String theme) {
+	public MainWindow(Stage stage, String theme, String title) {
 		super();
 		this.stage = stage;
 		this.theme = theme;
+		this.title = title;
 	}
 	
 	public void buildUI() {
-		getStage().setTitle("DCTM FX");
+		getStage().setTitle(getTitle());
+		getStage().getIcons().add(new Image(getClass().getResource("/icons8_Tentacles_64px.png").toExternalForm()));
 		setRoot(new BorderPane());
 		getRoot().getStylesheets().add(getClass().getResource(getTheme()).toExternalForm());
 		setScene(new Scene(getRoot(), 800, 600));
@@ -38,7 +41,9 @@ public class MainWindow {
 		setMenuFile(new Menu("File"));
 		setMenuDctm(new Menu("DCTM"));
 		setItemExit(new MenuItem("Exit"));
+		setItemOpenDctmDashboard(new MenuItem("Open Dashboard"));
 		getMenuFile().getItems().addAll(getItemExit());
+		getMenuDctm().getItems().addAll(getItemOpenDctmDashboard());
 		getMenubar().getMenus().addAll(getMenuFile(), getMenuDctm());
 		
 		getRoot().setTop(getMenubar());
@@ -119,5 +124,21 @@ public class MainWindow {
 
 	public void setItemExit(MenuItem itemExit) {
 		this.itemExit = itemExit;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public MenuItem getItemOpenDctmDashboard() {
+		return itemOpenDctmDashboard;
+	}
+
+	public void setItemOpenDctmDashboard(MenuItem itemOpenDctmDashboard) {
+		this.itemOpenDctmDashboard = itemOpenDctmDashboard;
 	}
 }

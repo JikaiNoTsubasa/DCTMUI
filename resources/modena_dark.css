@@ -29,6 +29,15 @@
     -fx-selection-bar-non-focused: rgb(50, 50, 50);
 }
 
+.default-color0.chart-line-symbol{ -fx-background-color: #5D001E, #5D001E; }
+.default-color1.chart-line-symbol{ -fx-background-color: #9A1750, #9A1750; }
+.default-color2.chart-line-symbol{ -fx-background-color: #45A29E, #45A29E; }
+.default-color3.chart-line-symbol{ -fx-background-color: #C5C6C7, #C5C6C7; }
+.default-color0.chart-series-line { -fx-stroke: #5D001E; }
+.default-color1.chart-series-line { -fx-stroke: #9A1750; }
+.default-color2.chart-series-line { -fx-stroke: #45A29E; }
+.default-color3.chart-series-line { -fx-stroke: #C5C6C7; }
+
 /* Fix derived prompt color for text fields */
 .text-input {
     -fx-prompt-text-fill: derive(-fx-control-inner-background, +50%);
